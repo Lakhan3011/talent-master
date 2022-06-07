@@ -180,7 +180,11 @@ td{padding-bottom:10px;}
 .add-button{
     font-size: 50px;
     margin: 2% 0 2% 80%;
-    color: lightgreen;
+    color: green;
+}
+
+.add-button a{
+	color: green;
 }
 
 /* FOOTER SECTION */
