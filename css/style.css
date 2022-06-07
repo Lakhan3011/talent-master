@@ -176,6 +176,13 @@ td{padding-bottom:10px;}
 	margin-left:10px;
 }
 
+/* ADD BUTTON */
+.add-button{
+    font-size: 50px;
+    margin: 2% 0 2% 80%;
+    color: lightgreen;
+}
+
 /* FOOTER SECTION */
 .footer-section li a{
 	color:#FFF;
