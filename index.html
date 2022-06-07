@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent Hiring</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+   
+    <!-- BOOTSTRAP SCRIPTS -->      
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a href="#">
+                 <div><img src="images/logo.png" alt="Hresity Logo"/></div>
+              </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hiring Drives</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Term & Conditions</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="bell" type="submit"><i class="bi bi-bell-fill"></i></button>
+                    <button style="border-radius:30px;" class="log" type="submit"><span>SignOut</span></button>
+                </form>
+           </div>
+        </div>
+    </nav>
+
+    <div id="filter">
+        <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#mobile-filter" aria-expanded="false" aria-controls="mobile-filter">Filters<i class="bi bi-funnel-fill"></i></span></button>
+    </div>
+
+    <!-- SIDEBAR -->
+        <div id="mobile-filter">
+            <div id="mobile-filter-show">
+            <div class="sidebar-header">
+                <h3 class="p-1 border-bottom">Filter by</h3>
+            </div>
+
+            <div class="sidebar-nav">
+
+                <!-- Filter by Skills -->
+
+                <div class="filter-skill">
+                    <h5 class="ml-3">Skills</h5>
+                    <form class="d-flex ml-4" role="search">
+                        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success"><i class="bi bi-search"></i></button>
+                    </form>
+
+                    <form class="ml-md-4">
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="C++">
+                            <label for="C++" class="pl-1 pt-sm-0 pt-1">C++</label>
+                        </div>
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="Java">
+                            <label for="Java" class="pl-1 pt-sm-0 pt-1">Java</label>
+                        </div>
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="Python">
+                            <label for="Python" class="pl-1 pt-sm-0 pt-1">Python</label>
+                        </div>
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="Perl">
+                            <label for="Perl" class="pl-1 pt-sm-0 pt-1">Perl</label>
+                        </div>
+                    </form>
+                
+                </div>
+
+                 <!-- Filter by Colleges -->
+
+                 <div class="filter-college">
+                    <h5 class="ml-3">Colleges</h5>
+                    <form class="d-flex ml-3" role="search">
+                        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success"><i class="bi bi-search"></i></button>
+                    </form>
+
+                    <form class="ml-md-4">
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="DEI">
+                            <label for="DEI" class="pl-1 pt-sm-0 pt-1">DEI</label>
+                        </div>
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="RBS">
+                            <label for="RBS" class="pl-1 pt-sm-0 pt-1">RBS</label>
+                        </div>
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="Hindustan college">
+                            <label for="Hindustan college" class="pl-1 pt-sm-0 pt-1">Hindustan college</label>
+                        </div>
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="KNIT">
+                            <label for="KNIT" class="pl-1 pt-sm-0 pt-1">KNIT</label>
+                        </div>
+                    </form>
+                
+                </div>
+                
+            </div>
+        </div>
+        </div>
+        <section id="sidebar-wrapper">
+            <div id="sidebar-wrapper-hide">
+            <div class="sidebar-header">
+                <h3 class="p-1 border-bottom">Filter by</h3>
+            </div>
+
+            <div class="sidebar-nav">
+
+                <!-- Filter by Skills -->
+
+                <div class="filter-skill p-1 border-bottom">
+                    <h5 class="ml-3">Skills</h5>
+                    <form class="d-flex ml-4" role="search">
+                        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success"><i class="bi bi-search"></i></button>
+                    </form>
+
+                    <form class="ml-md-4">
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="C++">
+                            <label for="C++" class="pl-1 pt-sm-0 pt-1">C++</label>
+                        </div>
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="Java">
+                            <label for="Java" class="pl-1 pt-sm-0 pt-1">Java</label>
+                        </div>
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="Python">
+                            <label for="Python" class="pl-1 pt-sm-0 pt-1">Python</label>
+                        </div>
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="Perl">
+                            <label for="Perl" class="pl-1 pt-sm-0 pt-1">Perl</label>
+                        </div>
+                    </form>
+                
+                </div>
+
+                 <!-- Filter by Colleges -->
+
+                 <div class="filter-college mt-3">
+                    <h5 class="ml-3">Colleges</h5>
+                    <form class="d-flex ml-3" role="search">
+                        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success"><i class="bi bi-search"></i></button>
+                    </form>
+
+                    <form class="ml-md-4">
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="DEI">
+                            <label for="DEI" class="pl-1 pt-sm-0 pt-1">DEI</label>
+                        </div>
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="RBS">
+                            <label for="RBS" class="pl-1 pt-sm-0 pt-1">RBS</label>
+                        </div>
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="Hindustan college">
+                            <label for="Hindustan college" class="pl-1 pt-sm-0 pt-1">Hindustan college</label>
+                        </div>
+                        <div class="form-inline border rounded p-sm-2 my-2">
+                            <input type="checkbox" name="type" id="KNIT">
+                            <label for="KNIT" class="pl-1 pt-sm-0 pt-1">KNIT</label>
+                        </div>
+                    </form>
+                
+                </div>
+                
+            </div>
+        </div>
+        </section>
+
+            <div id="container-fluid">
+                <section id="main-content">
+                    <div class="card w-75">
+                        <div class="card-header">
+                            <ul class="nav nav-pills card-header-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Search</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">My Hire</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Saved</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <form class="d-flex" role="search">
+                                <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-success"><i class="bi bi-search"></i></button>
+                            </form>
+                            <span ><small><strong><a href="#" class="cardbody-text"> Advance Search</a></strong></small></span><br>
+                            <div class="bottom-button">
+                                <button class="btn btn-primary btn-sm">C++</button>
+                                <button class="btn btn-primary btn-sm">Java</button> 
+                                <span ><small><strong><a href="#" class="cardbody-text">Clear filters</a> </strong> </small></span>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card w-75">
+                        <div class="card-body">
+                            <div class="friend">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/3_copy.jpg">
+                                <p class="head">
+                                    <strong>Aditya Agrawal</strong><br>
+                                    Hindustan College<br>
+                                    <span>Agra</span><br>
+                                </p>  
+                                <div class="status">&#10084;</div>
+                                    <div><button class="resume" type="button">Resume</button></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="skill-set">
+                                                <div class="skills">Java</div>
+                                                <div class="skills">Java</div>
+                                                <div class="skills">Java</div>
+                                            </div>
+                                            <p class="desc">
+                                                A search for 'lorem ipsum' will uncover many web sites 
+                                                still in their infancy. Various versions have evolved over the years, 
+                                                sometimes by accident, sometimes on purpose (injected humour and the like).
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-75">
+                        <div class="card-body">
+                            <div class="friend">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/3_copy.jpg">
+                                <p class="head">
+                                    <strong>Aditya Agrawal</strong><br>
+                                    Hindustan College<br>
+                                    <span>Agra</span><br>
+                                </p>  
+                                <div class="status">&#10084;</div>
+                                    <div><button class="resume" type="button">Resume</button></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        <div class="skill-set">
+                                        <div class="skills">C++</div>
+                                        <div class="skills">Java</div>
+                                        <div class="skills">Python</div>
+                                        <div class="skills">MySql</div>
+                                        <div class="skills">JavaScript</div>
+                                        </div>
+                                        <p class="desc">
+                                        A search for 'lorem ipsum' will uncover many web sites still in 
+                                        their infancy. Various versions have evolved over the years, sometimes by 
+                                        accident, sometimes on purpose (injected humour and the like).
+                                        </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-75">
+                        <div class="card-body">
+                            <div class="friend">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/3_copy.jpg">
+                                            <p class="head">
+                                                <strong>Aditya Agrawal</strong><br>
+                                                Hindustan College<br>
+                                                <span>Agra</span><br>
+                                            </p>  
+                                            <div class="status">&#10084;</div>
+                                            <div><button class="resume" type="button">Resume</button></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="skill-set">
+                                            <div class="skills">C++</div>
+                                            <div class="skills">Java</div>
+                                            <div class="skills">Python</div>
+                                            </div>
+                                            <p class="desc">
+                                                A search for 'lorem ipsum' will uncover many web 
+                                                sites still in their infancy. Various versions have evolved
+                                                over the years, sometimes by accident,
+                                                sometimes on purpose (injected humour and the like).
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-75">
+                        <div class="card-body">
+    
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+
+          
+
+ 
+       
+    <!--Footer-->
+
+<section class="footer-section  ">
+    <footer class="bg-primary text-center" >
+    <!-- Grid container -->
+        <div class="container">
+        <!--Grid row-->
+            <div class="row row-cols-4 footer-text">
+            <!--Grid column-->
+                <div class="col">
+                    <ul class="list-unstyled mb-0 ">
+                        <li>
+                            <a href="#!">About us</a>
+                        </li>
+                        <li>
+                            <a href="#!">Feedback</a>
+                        </li>
+                        <li>
+                            <a href="#!">Community</a>
+                        </li>
+                    </ul>
+                </div>
+            <!--Grid column-->
+            <!--Grid column-->
+                <div class="col">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Security</a>
+                        </li>
+                        <li>
+                            <a href="#!">Help & Support</a>
+                        </li>
+                        <li>
+                            <a href="#!">Foundation</a>
+                        </li>
+                    </ul>
+                </div>
+            <!--Grid column-->
+            <!--Grid column-->
+                <div class="col">
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!">Terms & Services</a>
+                        </li>
+                        <li>
+                            <a href="#!">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#!">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            <!--Grid column-->
+            <!--Grid column-->
+                <div class="col">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">
+                                <div class="footer-logo" ><img style="padding-top:15px;" src="images/logo.png" alt="Hresity Logo"/></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <!--Grid column-->
+            </div>
+        <!--Grid row-->
+        </div>
+    <!-- Copyright -->
+        <div class="text-center p-3" style="font-weight:bold;font-size:15px;  
+        color:#FFF; background-color: #007FFF;">
+        © 2022 Copyright: Hiresity.com
+        </div>
+    <!-- Copyright -->
+    </footer>
+</section>
+       
+    <script src="index.js"></script>
+   
+    
+</body>
+</html>
